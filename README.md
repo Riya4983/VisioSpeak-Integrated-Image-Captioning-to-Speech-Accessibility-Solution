@@ -1,7 +1,7 @@
-VisioSpeak – Integrated Image Captioning – to – Speech Accessibility Solution
+**VisioSpeak – Integrated Image Captioning – to – Speech Accessibility Solution**
 
 
-Problem Statement
+**Problem Statement**
 
 This project aims to develop a computer vision system that can automatically generate captions for images, enabling visually impaired individuals to better understand their surroundings. Visually impaired individuals face inherent challenges in comprehending and interacting with visual information, especially in a world that heavily relies on visual content. The primary question this project seeks to answer is: How can we empower visually impaired individuals by creating a system that interprets and communicates the content of images in a clear and actionable manner?
 
@@ -11,7 +11,7 @@ To address this problem, the project employs a combination of computer vision an
 
 The significance of this problem statement lies in its potential to significantly improve the daily lives of visually impaired individuals by granting them access to visual information in a manner that is both informative and actionable. The project aims to contribute to the broader field of assistive technology, fostering inclusivity and independence for individuals with visual impairments in an increasingly visual world.
 
-Data Sources
+**Data Sources**
 
 The project utilizes two primary data sources:
 
@@ -21,16 +21,16 @@ Captions: Each image is associated with corresponding captions manually annotate
 Link:  Flickr dataset
 Data Preparation
 
-The data preparation process involves the following steps:
+The **data preparation** process involves the following steps:
 Cleaning: Textual captions are cleaned by removing noise and irrelevant characters, such as punctuation and special symbols.
 
 Preprocessing: Captions are further preprocessed by applying techniques like lowercase conversion and tokenization. Tokens are then padded to ensure consistent input sequences for the model.
 Feature Extraction: Features are extracted from each image using the pre-trained VGG16 model. These features capture the visual characteristics of the image and are used as input to the caption generation model.
 Partitioning: The data is partitioned into training and test sets, ensuring a 90:10 split, and a generator function is employed to handle data in batches during model training. The training set is used to train the model and tune the hyperparameters and the test set is used to evaluate the final model performance.
 
-Data Modelling
+**Data Modelling**
 
-A) Image Captioning: Our project transcends traditional image captioning, empowering visually impaired individuals through advanced technology. Seamless integration of cutting-edge image captioning models enhances comprehension of visual content, leveraging descriptive AI for accurate and contextually rich captions. This innovation serves as a crucial bridge between visual and textual realms, meeting the unique needs of visually impaired individuals. A noteworthy advancement, our project signifies a substantial leap in leveraging AI to amplify accessibility, enriching experiences for the visually impaired community.
+**A) Image Captioning:** Our project transcends traditional image captioning, empowering visually impaired individuals through advanced technology. Seamless integration of cutting-edge image captioning models enhances comprehension of visual content, leveraging descriptive AI for accurate and contextually rich captions. This innovation serves as a crucial bridge between visual and textual realms, meeting the unique needs of visually impaired individuals. A noteworthy advancement, our project signifies a substantial leap in leveraging AI to amplify accessibility, enriching experiences for the visually impaired community.
  
 Inputs: 
 •	Images: Loaded and preprocessed using VGG16.
@@ -48,7 +48,7 @@ Tools used:
 •	Adam Optimizer: Optimizer for weight updates during model training.
 
  
- B) GPT 3.5 Enabled Actionable Directives: Utilizing GPT-3.5, actionable directives are seamlessly implemented for image classification. GPT-3.5's advanced capabilities facilitate the generation of precise directives with contextual relevance, enhancing user guidance through intricate visual scenarios. The utilization of GPT-3.5 underscores the commitment to deploying cutting-edge solutions in accessibility and user experience.
+**B) GPT 3.5 Enabled Actionable Directives:** Utilizing GPT-3.5, actionable directives are seamlessly implemented for image classification. GPT-3.5's advanced capabilities facilitate the generation of precise directives with contextual relevance, enhancing user guidance through intricate visual scenarios. The utilization of GPT-3.5 underscores the commitment to deploying cutting-edge solutions in accessibility and user experience.
 Inputs: 
 •	System Message: Guides GPT-3.5 on the reasoning process.
 •	User Messages: Include image captions for contextual understanding.
@@ -80,7 +80,7 @@ Tools used:
 
  
 
-C) Empowering visually impaired with text-to-speech guidance: Utilizing sophisticated algorithms, this system converts written content into auditory experiences, delivering precise guidance tailored for visually impaired users. By translating text into clear and concise verbal directives, our system enables a more intuitive and enriching user experience, bridging the gap between the visual and auditory domains. This innovative integration marks a significant stride towards empowering visually impaired individuals with enhanced tools for information comprehension and interaction.
+**C) Empowering visually impaired with text-to-speech guidance:** Utilizing sophisticated algorithms, this system converts written content into auditory experiences, delivering precise guidance tailored for visually impaired users. By translating text into clear and concise verbal directives, our system enables a more intuitive and enriching user experience, bridging the gap between the visual and auditory domains. This innovative integration marks a significant stride towards empowering visually impaired individuals with enhanced tools for information comprehension and interaction.
 Input:
 •	The text content to be converted to speech.
 •	The language in which the text should be converted (e.g., 'en' for English).
@@ -92,7 +92,7 @@ Tools Used:
 •	Os: This module is used for interacting with the operating system, in this case, for saving the converted audio file.
 •	Playsound: Used to play the converted audio file.
 
-Model Evaluation
+**Model Evaluation**
  
 We critically evaluated output performance, analyzing key metrics for each solution.
 1.	Image captioning:
